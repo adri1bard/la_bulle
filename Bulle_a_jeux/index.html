@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carte de la bulle à jeux</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+    <script>
+
+        jQuery(document).ready(function () {
+            var previousScroll = 0;
+
+            jQuery(window).scroll(function () {
+                var currentScroll = jQuery(this).scrollTop();
+
+                if (currentScroll < previousScroll) {
+                    jQuery('.navbar').fadeIn();
+                } else {
+                    jQuery('.navbar').fadeOut();
+                }
+
+                previousScroll = currentScroll;
+            });
+        });
+        $(document).ready(function () {
+            $('#popup').fadeIn(500); // Affiche le popup avec une animation de fondu
+            $('body').addClass('no-scroll'); // Ajoute une classe au body pour masquer le défilement de la page
+
+            $('#closeButton').click(function () {
+                $('#popup').fadeOut(500); // Ferme le popup avec une animation de fondu
+                $('body').removeClass('no-scroll'); // Supprime la classe du body pour rétablir le défilement de la page
+            });
+        });
+        var searchButton = document.getElementById('search-button');
+        var searchInput = document.getElementById('search-input');
+
+
+    </script>
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+<body>
+
+<div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <h2>Bienvenue a la bulle a jeu</h2>
+    <h2>Notre concept:</h2>
+
+    <p><b>Tarif:</b> blabla </p>
+    <p><b>Un par un:</b> blabla </p>
+    <p><b>At the end:</b> blabla </p>
+
+    <button id="closeButton" class="btn-danger btn">J'ai compris</button>
+</div>
+
+<div class="hidden">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand bulle titleone " href=""> La bulle a jeux</a>
+        <a class="navbar-brand titleone" href="#carte"> Notre carte<img src="img/38706.png"> </a>
+
+    </nav>
+    <div class="illustaton">
+        <img class="bulle_illustration" src="img/first-1-1200x600.jpg" alt="Bulle à jeux illustration">
+    </div>
+    <div style="  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;">
+
+
+        <hr style="border-style: solid;border-color: #ff6900;border-width: 7px 0 0 0;"/>
+
+
+        <section class="histoire">
+            <div class="titlepill">Au cœur du Vieux Nice</div>
+            <article>
+
+                <div class="titletwo">Votre Bar à Jeux de société</div>
+                <p>Nous vous proposons une ludothèque en constante évolution avec des centaines de jeux à partager. Que
+                    vous
+                    soyez un couple ou un groupe de 10 joueurs, nous saurons vous conseiller les jeux adaptés pour
+                    passer un
+                    agréable moment.</p>
+                <p>Envie de tester vos <b> réflex </b>? avec JUNGLE SPEED, KLUSTER …</p>
+                <p>Vous vous sentez <b> stratège </b>? avec SMALLWORLD, AVENTURIERS DU RAIL …</p>
+                <p>Soyez <b> imaginatif</b> ! avec DIXIT, DETECTIVE CLUB … </p>
+                <p> Ou bien élucidez un <b> mystère </b>! avec UNLOCK, CHRONICLES OF CRIME …</p>
+            </article>
+            <figure>
+                <img src="img/file2.jpg">
+            </figure>
+
+        </section>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <hr style="    border-style: solid;
+    border-color: #ff6900;
+    border-width: 7px 0 0 0;"/>
+
+        <!--    <div class="u-border-6  u-line-horizontal u-line-1"></div>-->
+        <section class="jouerdeguster">
+            <div class="jouez">
+
+                <div class=" titleone">
+                    Jouez
+                </div>
+
+                <p>
+                    Venez découvrir notre ludothèque de plusieurs centaines de jeux en libre accès. A essayer à 2 ou à
+                    beaucoup plus, nous saurons vous conseiller plusieurs jeux pour passer un bon moment.
+
+                    Notre équipe sont aussi des passionnés de jeux. Nous pourrons vous conseiller un ou plusieurs jeux
+                    selon
+                    les âges et le nombre de personne. Ce service est compris
+                </p>
+            </div>
+            <div class="dequstez">
+
+                <div class=" titleone">
+                    Dégustez
+                </div>
+                <p>
+                    Partager un verre entre amis ou en famille. Un Jus de fruit, une pression ou un petit apéritif, il
+                    ne vous reste qu’à choisir.
+                    Goutez à l’une de nos bolinettes si vous avez un creux.
+                    Une faim de loup ? On vous propose nos plateaux de charcuterie ou de fromage.
+                </p>
+            </div>
+            <div class="regles">
+
+                <div class=" titleone">
+                    Régles
+                </div>
+                <p>
+                    Tarif: lorem ipsum <br/>
+                    Un par un: lorem ipsum <br/>
+                    At the end: lorem ipsum <br/>
+                </p>
+            </div>
+            <a class="btn btn-dark" href="http://www.labulleajeux.fr/wp-content/uploads/2022/10/Reglement-768x1086.jpg"
+               style="box-shadow: 5px 4px #c93fff;">Régles détaillés</a>
+        </section>
+    </div>
+    <div style="  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;" id="carte">
+        <hr style="    border-style: solid;
+    border-color: #ff6900;
+    border-width: 7px 0 0 0;"/>
+
+        <div id="carouselExampleControls" class="carousel slide" data-interval="100" data-bs-touch="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carte-bulle-614x1024.png" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/2-614x1024.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div style="  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;">
+        <hr style="    border-style: solid;
+    border-color: #ff6900;
+    border-width: 7px 0 0 0;"/>
+        <div class="gtco-testimonials">
+            <h2>Avis google</h2>
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div>
+                    <div class="card text-center"><img class="card-img-top"
+                                                       src="img/aurelie.png"
+                                                       alt="">
+                        <div class="card-body">
+                            <h5> Aurelie S<br/>
+                                <span> 5 étoiles </span>
+                            </h5>
+                            <p class="card-text">“ Super endroit ! Super concept. On a passe une bonne soirée. Assiette
+                                de
+                                charcuterie/ fromage tres bonne.
+                                Les serveurs sont très sympa, nous conseillent sur les différents jeux proposes. A
+                                tester
+                                absolument!” </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card text-center"><img class="card-img-top"
+                                                       src="img/AM.png"
+                                                       alt="">
+                        <div class="card-body">
+                            <h5>A M<br/>
+                                <span> 5 étoiles </span>
+                            </h5>
+                            <p class="card-text">“Un large de choix de jeu se cache au fond du bar, les serveurs sont de
+                                bon
+                                conseils quand on ne sait pas a quoi jouer ou quon veut découvrir de nouveau jeu et ils
+                                expliquent plutot bien les regles. Ils sont super cool ! Je recommande ” </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card text-center"><img class="card-img-top"
+                                                       src="img/rahim.png"
+                                                       alt="">
+                        <div class="card-body">
+                            <h5>Hassanaly Rahim<br/>
+                                <span> 5 étoiles </span>
+                            </h5>
+                            <p class="card-text">“ Bar à jeux vraiment super ! Le gérant est top et explique très bien
+                                les
+                                jeux. L'ambiance est génial et convivial. À tester au moins une fois, vous ne serez pas
+                                déçu
+                                ;) ” </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card text-center"><img class="card-img-top"
+                                                       src="img/Virginie.png"
+                                                       alt="">
+                        <div class="card-body">
+                            <h5>Virginie mergengone<br/>
+                                <span> 5 étoiles </span>
+                            </h5>
+                            <p class="card-text">“ Super, des jeux à gogo un service impeccable ainsi que l acceuil des
+                                conseils pour choisir un jeu et explication de la règle de jeu donné par les
+                                administrateurs
+                                du lieu. Bref à refaire un très bon moment passé en ce lieu. ” </p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-around; margin: 25px; ">
+                    <a class="btn center-btn" style="background: rgba(127,217,255,0.63) "
+                       href="https://www.google.com/maps/place/La+Bulle+-+Bar+%C3%A0+Jeux+%C3%A0+Nice,+salle+de+jeux,+location+de+salle/@43.6979997,7.2742592,17z/data=!3m1!4b1!4m6!3m5!1s0x12cdcfff075469e9:0xc467722c201bc719!8m2!3d43.6979997!4d7.2764479!16s%2Fg%2F11byz33_6h?entry=ttu">Plus
+                        d'avis <b style="color: #4285F4">G</b><b style="color:	#DB4437">o</b><b
+                                style="color: 	#F4B400">o</b><b style="color: 	#4285F4">g</b><b
+                                style="color: #0F9D58">l</b><b style="color: #DB4437">e</b></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="titlepill">Suivez nous</div>
+
+
+
+
+
+        <ul style="padding: 0; margin: 0; padding-bottom: 20px; list-style-type: none; display: flex; justify-content: space-around;">
+            <a href="https://www.google.com/maps/dir//La+Bulle+-+Bar+%C3%A0+Jeux+%C3%A0+Nice,+salle+de+jeux,+location+de+salle,+4+Rue+du+Pont+Vieux,+06300+Nice,+France/@43.6979996,7.2718398,17z/data=!4m17!1m7!3m6!1s0x12cdcfff075469e9:0xc467722c201bc719!2sLa+Bulle+-+Bar+%C3%A0+Jeux+%C3%A0+Nice,+salle+de+jeux,+location+de+salle!8m2!3d43.6979997!4d7.2764479!16s%2Fg%2F11byz33_6h!4m8!1m0!1m5!1m1!1s0x12cdcfff075469e9:0xc467722c201bc719!2m2!1d7.2764479!2d43.6979997!3e1?entry=ttu"
+               class="btn btn-dark">
+                <li style="font-weight: bold;"><img src="img/itineraire.png"> trouvez nous</img></li>
+            </a>
+            <a href="https://discord.com/invite/CFdXRw2R4S">
+                <li class="btn discord">Discord</li>
+            </a>
+            <a href="https://www.instagram.com/labullebarajeux/?hl=fr">
+                <li class="btn instagram">Instagram</li>
+            </a>
+            <a href="https://www.facebook.com/labulleajeux/">
+                <li class="btn facebook">facebook</li>
+            </a>
+        </ul>
+        <h2>Nos horaires:</h2>
+
+        <ul style="list-style: none;  margin-bottom: 0;">
+            <li>Lundi:Fermé</li>
+            <li> Mardi:Fermé</li>
+            <li> Mercredi:17h30-Minuit</li>
+            <li> Jeudi:17h30–Minuit</li>
+            <li> Vendredi:17h30–Minuit</li>
+            <li> Samedi:14h–Minuit</li>
+            <li> Dimanche:14h–23h00</li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

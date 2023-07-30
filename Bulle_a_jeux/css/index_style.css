@@ -1,0 +1,385 @@
+/* global style*/
+/*@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');*/
+
+body {
+    font-family: inherit, serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
+
+}
+
+.titleone {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
+}
+
+section {
+    border-radius: 20%;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+article {
+    padding-top: 10px;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    margin: 0;
+    height: 90px;
+    border-style: solid;
+    border-color: #ff6900;
+    border-width: 7px 0 0 0;
+    border-radius: 100%;
+    transform: translateY(50%);
+    width: calc(60%);
+}
+
+
+article div {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* navbar */
+
+
+/*  header  */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.navbar .titleone {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 1.7em;
+    margin-right: 20px;
+    border-bottom: #333333 solid 1px;
+    padding-bottom: 0;
+}
+.navbar a{
+    padding-bottom: 0;
+}
+
+.navbar .titleone::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    background-color: rgba(255, 105, 0, 0.56);
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+}
+
+
+.bulle_illustration {
+    margin-top: 60px;
+    width: 100%;
+    border-radius: inherit;
+
+}
+
+.illustaton {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* regles du bar*/
+.carte {
+    background-color: #C8BFAF;
+}
+
+.carte h1 img {
+    width: 25px;
+    height: 25px;
+}
+
+.carte .titre_boissons {
+
+
+    color: black;
+}
+
+/* histoire du bar */
+.histoire {
+    display: flex;
+    align-content: space-around;
+
+    position: relative;
+    flex-direction: column;
+    padding-top: 0;
+    margin: 0;
+
+}
+
+
+.histoire article {
+    text-align: justify;
+    font-size: 10px;
+    margin: auto;
+}
+
+.histoire figure {
+
+    display: flex;
+}
+
+.histoire figure img {
+    width: 100%;
+}
+
+@media {
+
+}
+/* popup */
+#popup {
+
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5%;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.no-scroll  .hidden{
+    display: none;
+}
+/* boutton boisson */
+
+
+
+
+
+a img {
+
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* jouer / deguqter */
+.jouerdeguster {
+    padding: 0px;
+    margin: 0;
+    padding-top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+}
+
+.jouerdeguster div {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+}
+.jouez{
+    margin: 0px;
+}
+.jouez .btn{
+    margin-right: 20px;
+
+}
+.jouerdeguster .jouez  {
+    box-shadow: 5px 4px teal;
+    background-color: #c9dff0;
+}
+.jouerdeguster p{
+    width: 70%;
+    text-align: justify;
+}
+.jouerdeguster .dequstez {
+    margin-top: 15px;
+    background-color: #c9dff0;
+
+    box-shadow: 5px 4px #ff3f67;
+}
+.dequstez .titleone{
+    padding-right: 4px;
+}
+.dequstez p{
+    padding-right: 4px;
+}
+.titlepill {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.7em;
+    padding-bottom: 5px;
+}
+
+.jouerdeguster .regles{
+    margin-top: 15px;
+    background-color: #c9dff0;
+    box-shadow: 5px 4px #c93fff;
+
+}
+/* carte */
+.carousel-item-next img {
+    opacity: 1;
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 4rem;
+    height: 4rem;
+}
+
+/* avis */
+body {
+    background: aliceblue;
+}
+
+/* Avis  */
+.gtco-testimonials h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+
+.gtco-testimonials .owl-dots {
+    text-align: center;
+}
+
+.gtco-testimonials .owl-dots span {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: block;
+    background: #fff;
+    border: 2px solid #01b0f8;
+    margin: 0 5px;
+}
+
+
+.gtco-testimonials .card {
+    background: #fff;
+    box-shadow: 0 8px 30px -7px #c9dff0;
+    margin: 0 20px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.gtco-testimonials .card .card-img-top {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    box-shadow: 0 8px 20px -4px #95abbb;
+    width: 100px;
+    height: 100px;
+}
+
+.gtco-testimonials .card h5 {
+    color: black;
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.gtco-testimonials .card h5 span {
+    font-size: 18px;
+    color: #fdba55;
+}
+
+.gtco-testimonials .card p {
+    font-size: 18px;
+    color: #555;
+    padding-bottom: 15px;
+}
+
+
+.gtco-testimonials .center h5 {
+    font-size: 24px;
+}
+
+.gtco-testimonials .center h5 span {
+    font-size: 20px;
+}
+
+.gtco-testimonials .center .card-img-top {
+    max-width: 100%;
+    height: 120px;
+    width: 120px;
+}
+
+@media (max-width: 767px) {
+    .gtco-testimonials {
+        margin-top: 20px;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    outline: 0;
+}
+
+.owl-carousel button.owl-dot {
+    outline: 0;
+}
+
+
+/* footer */
+footer{
+    background-color: #b3c3d0;
+}
+
+.discord{
+    background-color: #7289da;
+    font-weight: bold;
+}
+.instagram{
+    background: linear-gradient(to right, #FFC700, #FF4C4C, #8A3AB9);
+    font-weight: bold;
+    color: white;
+}
+.facebook{
+    background-color: #4267B2;
+    font-weight: bold;
+    color: white;
+}
+
+
+li {
+    flex: 0 0 auto;
+
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 8px;
+}
+
+#search-button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
